@@ -68,9 +68,19 @@ The following boolean flags are set to `False` if not passed to the command line
 | --render-training | Renders the environments during training |
 | --use-wandb | Enables [wandb](https://www.wandb.com/) to track the experiment |
 
-For example, to run the program without CUDA and to render the environments during training, run:
+For example, to run the program for Alien, save models and use wandb, run:
 ```shell script
-python -m simple --device cpu --render-training
+python -m simple --env-name=Alien --save-models --use-wandb --ppo-gamma=0.9
+```
+
+To run the program for Flappy Bird, save models and use wandb, run:
+```shell script
+python -m simple --env-name=FlappyBird --save-models --use-wandb --ppo-gamma=0.9 --rollout-length=25
+```
+
+To run evaluation for train models and visualize them on cpu, run:
+```shell script
+python -m simple --env-name=Alien --render-evaluation --load-models --device=cpu
 ```
 
 ## Per-environment performance
