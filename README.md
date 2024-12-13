@@ -91,7 +91,7 @@ The scores* obtained with this implementation are detailed in the following tabl
 | ----------- | ---:  | ---:          | 
 | Alien | 316 | 405.2 | 
 | Freeway | 22 | 20.3 | 
-| FlappyBird | 101 | - | 
+| FlappyBird | -7.5 | - | 
 
 **Scores obtained on only one full training per environment.
  The scores are the maximum average cumulative reward obtained in the real environment.*
